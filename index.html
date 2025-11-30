@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Phong Sử Quán | 10CSU - THPT Chuyên Lê Hồng Phong</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'Merriweather', 'serif'],
+            },
+            colors: {
+              primary: {
+                50: '#fdf2f8',
+                100: '#fce7f3',
+                500: '#db2777', // Pink/Rose base
+                800: '#9f1239', // Deep Red / Burgundy
+                900: '#881337', // Imperial Red
+                950: '#4c0519', // Darkest Red
+              },
+              amber: {
+                50: '#fffbeb',
+                100: '#fef3c7',
+                200: '#fde68a', // Gold
+                800: '#92400e', // Bronze
+                900: '#78350f', // Dark Wood
+              }
+            },
+            animation: {
+              'float-slow': 'float 8s ease-in-out infinite',
+              'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #fbfaf8; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #a8a29e; 
+        border-radius: 5px;
+        border: 2px solid #fbfaf8;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #881337; 
+      }
+      body {
+        cursor: default;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6"
+  }
+}
+</script>
+</head>
+  <body class="bg-[#fbfaf8] text-stone-800 antialiased overflow-x-hidden selection:bg-red-900 selection:text-amber-50">
+    <div id="root"></div>
+  </body>
+</html>
